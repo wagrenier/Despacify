@@ -5,7 +5,7 @@ import {ResultsComponent} from '/results/results.component';
 
 const routes: Routes = [
   {path: '/', component: DashboardComponent},
-  {path: '/playlist', component: ResultsComponent},
+  {path: '/playlist/:name', component: ResultsComponent},
 ];
 
 @NgModule({

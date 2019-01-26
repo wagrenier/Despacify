@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {Song} from "../models/Song";
 
 @Component({
   selector: 'app-results',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsComponent implements OnInit {
 
-  constructor() { }
+
+  currentSong: Song;
+  constructor(private route: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit() {
   }
