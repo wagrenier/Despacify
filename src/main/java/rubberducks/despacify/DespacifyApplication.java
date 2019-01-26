@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = { "Controllers"} )
+@ComponentScan(basePackages = {"controllers"} )
 public class DespacifyApplication {
 
     public static void main(String[] args) {

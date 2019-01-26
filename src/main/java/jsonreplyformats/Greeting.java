@@ -1,4 +1,4 @@
-package JsonReplyFormats;
+package jsonreplyformats;
 
 public class Greeting {
     private final long id;
