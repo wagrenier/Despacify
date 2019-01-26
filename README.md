@@ -10,3 +10,4 @@ https://conuhacks-playback-api.touchtunes.com/docs/#/Playback_API/getPlays
 5) (optional) AI retrofitting
 
 TO_REMOVE GEOLOCALISATION KEY: AIzaSyDMeIw0aL5EL9dab_ycZbb3D-196wDGrYU
+https://developer.spotify.com/documentation/web-playback-sdk/
