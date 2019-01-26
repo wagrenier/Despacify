@@ -1,6 +1,6 @@
 package controllers;
-import java.util.concurrent.atomic.AtomicLong;
 
+import java.util.concurrent.atomic.AtomicLong;
 import jsonreplyformats.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
