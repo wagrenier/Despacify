@@ -8,3 +8,5 @@ https://conuhacks-playback-api.touchtunes.com/docs/#/Playback_API/getPlays
 3) get the api to work with wath we want
 4) do webapp
 5) (optional) AI retrofitting
+
+TO_REMOVE GEOLOCALISATION KEY: AIzaSyDMeIw0aL5EL9dab_ycZbb3D-196wDGrYU
