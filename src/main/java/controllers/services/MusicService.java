@@ -29,8 +29,6 @@ public class MusicService {
 
     public Map<Song, PlayPopularity> getPlays(double lat, double lng) {
         try {
-
-
             Map<String, String> parameters = new HashMap<>();
             String start = ZonedDateTime.now(ZoneOffset.UTC).minusDays(30 + 14).format(DateTimeFormatter.ISO_INSTANT);
 
