@@ -6,12 +6,12 @@ public class Song {
     private String songTitle;
 
     //Default constructor --
-    Song(){
+   public Song(){
 
     }
 
     //Constructor
-    Song(int songID, String songTitle){
+   public Song(int songID, String songTitle){
         this.songID = songID;
         this.songTitle = songTitle;
     }

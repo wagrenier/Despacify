@@ -13,9 +13,9 @@ public class Play {
     private String state;
 
     //Constructors
-    Play (){}
+    public Play (){}
 
-    Play(int songId, double latitude, String playDate, int artistId, double longitude, String style){
+  public  Play(int songId, double latitude, String playDate, int artistId, double longitude, String style){
         this.songId = songId;
         this.latitude = latitude;
         this.playDate = playDate;
