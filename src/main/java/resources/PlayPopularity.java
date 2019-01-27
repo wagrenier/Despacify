@@ -2,6 +2,8 @@ package resources;
 
 public class PlayPopularity {
     int numberOfPlays;
+
+    //Popularity over the course of two weeks
     int[] popularity = new int[14];
 
     public PlayPopularity() {
