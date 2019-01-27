@@ -1,3 +1,79 @@
-<p>
-  dashboard works!
-</p>
+
+<div class="header">
+  <p></p>
+</div>
+
+
+
+<!--Simple Supposed 3 inputs -->
+<div class="form-container">
+
+  <!-- The Input TextFields -->
+  <ul>
+    <mat-form-field>
+      <input matInput placeholder="Playlist Name">
+    </mat-form-field>
+  </ul>
+
+
+  <!-- Supposed to be a DropDown Menu -->
+  <ul>
+    <mat-form-field>
+      <input matInput placeholder="Mood">
+    </mat-form-field>
+  </ul>
+
+
+  <!-- Supposed to be a DropDown Menu -->
+  <ul>
+    <mat-form-field>
+      <input matInput placeholder="Date">
+    </mat-form-field>
+  </ul>
+
+  <ul>
+    <mat-form-field>
+      <input matInput placeholder="Location">
+    </mat-form-field>
+  </ul>
+
+  <!-- Supposed to be a DropDown Menu -->
+  <ul>
+    <mat-form-field>
+      <input matInput placeholder="Age Group">
+    </mat-form-field>
+  </ul>
+
+
+  <!-- Test Drop Down Menu -->
+  <ul>
+    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+      <mat-select required>
+        <mat-option>-- None --</mat-option>
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+      <mat-label>
+        <mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i>
+      </mat-label>
+    </mat-form-field>
+  </ul>
+
+
+  <!-- OG HTML Drop down menu -->
+  <h4>Basic native select</h4>
+  <mat-form-field>
+    <select matNativeControl required>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </mat-form-field>
+
+
+  <!-- Button to start the whole application -->
+  <br><br />
+  <ul><button>Create Playlist</button></ul>
+
+
+</div>
