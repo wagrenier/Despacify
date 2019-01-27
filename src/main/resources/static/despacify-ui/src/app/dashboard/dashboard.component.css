@@ -1,28 +1,27 @@
-.example-container {
-    display: flex;
-    flex-direction: column;
-  justify-content: center;
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  width:25vw;
   align-items: center;
-  }
-  
-  .example-container > * {
-    width: 100%;
-  }
+  justify-content: center;
+}
 
-  .header{
-    height:10%;
-    background-color:blue;
-    width: 100%;
-  }
+.outer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
 
-  .form-container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20%;
-    background-color: #BBDEFB;
-  }
+.form-field{
+  width:80%;
+}
 
-  .dropDownMenu{
-    opacity: 0.75;
-    font-size: 0.75em;
-  }
+#image{
+  width:75%;
+  border-radius: 15px;
+  border: solid 2px rgba(0,0,0,0.75);
+}
