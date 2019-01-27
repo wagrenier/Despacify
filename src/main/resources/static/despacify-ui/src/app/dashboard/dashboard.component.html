@@ -1,1 +1,38 @@
-<p>works</p>
+<div class="outer-container">
+
+  <!-- The Input TextFields -->
+  <mat-card>
+    <div class="inner-container">
+
+      <img id="image" src="assets/despacito.png">
+      <p>Despacify</p>
+
+      <mat-form-field class="form-field">
+        <input matInput [formControl]="nameController" placeholder="Playlist Name">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <input matInput [formControl]="locationController" placeholder="Location">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <mat-select placeholder="Genre" [formControl]="genreController" multiple>
+          <mat-option *ngFor="let genre of genres" [value]="genre"> {{genre}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-flat-button (click)="submit()" color="primary">Create Playlist</button>
+
+    </div>
+  </mat-card>
+
+
+</div>
+
+
+
+
+
+
+
+

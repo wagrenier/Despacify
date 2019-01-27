@@ -1,0 +1,27 @@
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  width:25vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.form-field{
+  width:80%;
+}
+
+#image{
+  width:75%;
+  border-radius: 15px;
+  border: solid 2px rgba(0,0,0,0.75);
+}
