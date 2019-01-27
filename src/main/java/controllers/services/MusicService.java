@@ -174,7 +174,7 @@ public class MusicService {
 
     //Returns the index which represents a day in the array
     private int getIndexInArrayAtDate(String Date) {
-        
+
         int yearPlayedInInt = Integer.parseInt(Date.substring(0,3));
         int monthPlayedInInt = Integer.parseInt(Date.substring(5,6));
         int dayPlayedInInt = Integer.parseInt(Date.substring(7, 8));
