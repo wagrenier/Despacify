@@ -5,7 +5,7 @@ public class Song {
     private int songID;
     private String songTitle;
 
-    //Default constructor
+    //Default constructor --
     Song(){
 
     }

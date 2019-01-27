@@ -2,35 +2,36 @@ package resources;
 
 public class Play {
 
-    private int songID;
+    private int songId;
     private double latitude;
     private String playDate;
-    private int artistID;
-    private double longtitude;
+    private int artistId;
+    private double longitude;
     private String style;
+    private String state;
 
     //Constructors
     Play (){
 //
     }
 
-    Play(int songID, double latitude, String playDate, int artistID, double longtitude, String style){
-        this.songID = songID;
+    Play(int songId, double latitude, String playDate, int artistId, double longitude, String style){
+        this.songId = songId;
         this.latitude = latitude;
         this.playDate = playDate;
-        this.artistID = artistID;
-        this.longtitude = longtitude;
+        this.artistId = artistId;
+        this.longitude = longitude;
         this.style = style;
 
     }
 
     //Setters and Getters
-    public int getSongID() {
-        return songID;
+    public int getSongId() {
+        return songId;
     }
 
-    public void setSongID(int songID) {
-        this.songID = songID;
+    public void setSongId(int songId) {
+        this.songId = songId;
     }
 
     public double getLatitude() {
@@ -49,20 +50,20 @@ public class Play {
         this.playDate = playDate;
     }
 
-    public int getArtistID() {
-        return artistID;
+    public int getArtistId() {
+        return artistId;
     }
 
-    public void setArtistID(int artistID) {
-        this.artistID = artistID;
+    public void setArtistId(int artistId) {
+        this.artistId = artistId;
     }
 
-    public double getLongtitude() {
-        return longtitude;
+    public double getLongitude() {
+        return longitude;
     }
 
-    public void setLongtitude(double longtitude) {
-        this.longtitude = longtitude;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
     public String getStyle() {
@@ -71,5 +72,13 @@ public class Play {
 
     public void setStyle(String style) {
         this.style = style;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 }

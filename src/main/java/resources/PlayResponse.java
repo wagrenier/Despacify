@@ -1,16 +1,18 @@
 package resources;
 
+import java.util.List;
+
 public class PlayResponse {
 
     private double totalRecordsCount;
 
-    private Play plays;
+    private List<Play> plays;
 
     //Constructors
     PlayResponse() {
     }
 
-    PlayResponse(double totalRecordsCount, Play plays) {
+    PlayResponse(double totalRecordsCount, List<Play> plays) {
         this.totalRecordsCount = totalRecordsCount;
         this.plays = plays;
     }
@@ -25,11 +27,11 @@ public class PlayResponse {
         this.totalRecordsCount = totalRecordsCount;
     }
 
-    public Play getPlays() {
+    public List<Play> getPlays() {
         return plays;
     }
 
-    public void setPlays(Play plays) {
+    public void setPlays(List<Play> plays) {
         this.plays = plays;
     }
 }
