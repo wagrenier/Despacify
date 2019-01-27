@@ -1,5 +1,7 @@
 package resources;
 
+import java.util.Objects;
+
 public class Play {
 
     private int songId;
@@ -80,5 +82,24 @@ public class Play {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Play play = (Play) o;
+        return songId == play.songId &&
+                Double.compare(play.latitude, latitude) == 0 &&
+                artistId == play.artistId &&
+                Double.compare(play.longitude, longitude) == 0 &&
+                Objects.equals(playDate, play.playDate) &&
+                Objects.equals(style, play.style) &&
+                Objects.equals(state, play.state);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(songId, latitude, playDate, artistId, longitude, style, state);
     }
 }

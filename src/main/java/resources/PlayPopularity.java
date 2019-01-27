@@ -2,7 +2,7 @@ package resources;
 
 public class PlayPopularity {
     int numberOfPlays;
-    int[] popularity = new int[14];
+    int[] popularity;
 
     public PlayPopularity() {
     }
