@@ -172,23 +172,20 @@ public class MusicService {
 
     //Returns the index which represents a day in the array
     private int getIndexInArrayAtDate(String Date) {
-
-        int index = 0;
+        
+        int yearPlayedInInt = Integer.parseInt(Date.substring(0,3));
         int monthPlayedInInt = Integer.parseInt(Date.substring(5,6));
         int dayPlayedInInt = Integer.parseInt(Date.substring(7, 8));
         int currentDayInInt = Integer.parseInt(ZonedDateTime.now(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT).substring(7, 8));
         int currentMonthInInt = Integer.parseInt(ZonedDateTime.now(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT).substring(5, 6));
+        int currentYearInInt = Integer.parseInt(ZonedDateTime.now(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT).substring(0, 3));
         int difference = currentDayInInt - dayPlayedInInt;
 
-        if (currentMonthInInt == monthPlayedInInt){
-            return currentDayInInt - dayPlayedInInt;
-        }
-        else {
-            LocalDate d1 = LocalDate.of(2017, monthPlayedInInt, dayPlayedInInt);
-            LocalDate d2 = LocalDate.of(2017, currentMonthInInt, currentDayInInt);
+
+            LocalDate d1 = LocalDate.of(yearPlayedInInt, monthPlayedInInt, dayPlayedInInt);
+            LocalDate d2 = LocalDate.of(currentYearInInt, currentMonthInInt, currentDayInInt);
 
             difference = (int) ChronoUnit.DAYS.between(d1, d2);
-        }
 
         return difference;
 
