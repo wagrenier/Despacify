@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {Song} from "../models/Song";
+import {Playlist} from "../models/Playlist";
+import {switchMap} from "rxjs/operators";
 
 @Component({
   selector: 'app-results',
@@ -9,10 +11,15 @@ import {Song} from "../models/Song";
 })
 export class ResultsComponent implements OnInit {
 
+  playlistName: string;
 
   currentSong: Song;
   constructor(private route: ActivatedRoute,
-              private router: Router) { }
+              private router: Router) {
+    this.route.paramMap.pipe(
+      switchMap((params: ParamMap) =>
+        this.playlistName = params.get('name')))
+  }
 
   ngOnInit() {
   }

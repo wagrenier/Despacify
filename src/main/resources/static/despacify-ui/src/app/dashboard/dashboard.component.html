@@ -1,55 +1,37 @@
-<!-- The header menu -->
-<div class="header">
-  <p></p>
-</div>
+<div class="outer-container">
 
+  <!-- The Input TextFields -->
+  <mat-card>
+    <div class="inner-container">
 
-<!--Simple Supposed 3 inputs -->
-<div class="form-container">
+      <img id="image" src="assets/despacito.png">
+      <p>Despacify</p>
 
-  <div>
-
-    <!-- The Input TextFields -->
-    <mat-form-field [formControl]="nameController">
-      <input matInput placeholder="Playlist Name">
-    </mat-form-field>
-
-
-    <mat-form-field [formControl]="locationController">
-      <input matInput placeholder="Location">
-    </mat-form-field>
-
-    <!-- Supposed to be a DropDown Menu -->
-    <mat-form-field [formControl]="ageGroupController">
-      <input matInput placeholder="Age Group">
-    </mat-form-field>
-
-    <!--TODO: Recheck the dropDown menu-->
-    <!-- Test Drop Down Menu -->
-    <div class="dropDownMenu">
-      <mat-form-field>
-        <mat-select placeholder="Genre" [formControl]="genreController" multiple>
-
-          <mat-select-trigger>
-            {{genreController.value ? genreController.value[0] : ''}}
-
-            <span *ngIf="genreController.value?.length > 1" class="genres">
-            (++{{genreController.value?.length - 1 }} {{ genreController.value?.length === 2 ? 'Other' : 'Other' }}
-          </span>
-
-          </mat-select-trigger>
-          <mat-option> *ngFor="let genre of genres" [value]="genre"> {{genre}}</mat-option>
-
-        </mat-select>
-
+      <mat-form-field class="form-field">
+        <input matInput [formControl]="nameController" placeholder="Playlist Name">
       </mat-form-field>
-    </div>
 
-  </div>
+      <mat-form-field class="form-field">
+        <input matInput [formControl]="locationController" placeholder="Location">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <mat-select placeholder="Genre" [formControl]="genreController" multiple>
+          <mat-option *ngFor="let genre of genres" [value]="genre"> {{genre}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-flat-button (click)="submit()" color="primary">Create Playlist</button>
+
+    </div>
+  </mat-card>
+
+
 </div>
 
-<button mat-flat-button (click)="submit()">Create Playlist</button>
-<!-- Button to start the whole application -->
+
+
+
 
 
 
