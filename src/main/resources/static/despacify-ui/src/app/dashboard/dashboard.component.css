@@ -1,0 +1,28 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  .header{
+    height:10%;
+    background-color:blue;
+    width: 100%;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    background-color: #BBDEFB;
+  }
+
+  .dropDownMenu{
+    opacity: 0.75;
+    font-size: 0.75em;
+  }
