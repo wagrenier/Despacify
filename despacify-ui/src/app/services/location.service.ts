@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class LocationService {
 
-  readonly api = 'AIzaSyDMeIw0aL5EL9dab_ycZbb3D-196wDGrYU';
+  readonly api ='good try';
   readonly  url = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
 
   constructor(private http: HttpClient) {}
